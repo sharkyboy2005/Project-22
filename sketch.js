@@ -46,12 +46,13 @@ function setup() {
 
 
 function draw() {
-  rectMode(CENTER);
-  background(0);
-  packageSprite.x= packageBody.position.x 
-  packageSprite.y= packageBody.position.y 
-  drawSprites();
- 
+  	rectMode(CENTER);
+	background(0);
+  	packageSprite.x= packageBody.position.x 
+  	packageSprite.y= packageBody.position.y 
+	packageSprite.display();
+	helicopterSprite.display(); 
+	groundSprite.display();
 }
 
 function keyPressed() {
@@ -60,6 +61,3 @@ function keyPressed() {
     packageSprite.velocityY = 5
   }
 }
-
-
-
